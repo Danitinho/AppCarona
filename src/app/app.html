@@ -1,10 +1,12 @@
 <ion-menu [content]="content">
-    <ion-toolbar>
-        <ion-title>Pages</ion-title>
-    </ion-toolbar>
-
+    <ion-navbar class="navColors">
+    </ion-navbar>
     <ion-content>
-        <ion-list>
+        <div class="topSideDrawer">
+            LBSSDSD
+        </div>
+
+        <ion-list no-lines>
             <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
                 {{p.title}}</button>
         </ion-list>
