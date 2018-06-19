@@ -8,13 +8,20 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list'
 import { TermosPage } from '../pages/termos/termos';
+import { ContactsPage } from '../pages/contacts/contacts';
+import { Contact, Contacts } from '@ionic-native/contacts';
+import { CadastroPage } from '../pages/cadastro/cadastro';
+import { StatusPage } from '../pages/status/status';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    TermosPage
+    TermosPage,
+    ContactsPage,
+    CadastroPage,
+    StatusPage
   ],
   imports: [
     BrowserModule,
@@ -25,11 +32,15 @@ import { TermosPage } from '../pages/termos/termos';
     MyApp,
     HomePage,
     ListPage,
-    TermosPage
+    TermosPage,
+    ContactsPage,
+    CadastroPage,
+    StatusPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Contacts,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
