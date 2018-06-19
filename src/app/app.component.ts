@@ -5,10 +5,15 @@ import { Nav, Platform } from 'ionic-angular';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { TermosPage } from '../pages/termos/termos';
+import { GruposPage } from '../pages/grupos/grupos';
+import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
+import { HelpPage } from '../pages/help/help';
+import { ExitPage } from '../pages/exit/exit';
 
 interface IPage{
   title:string
   component:any
+  icon:string
 }
 @Component({
   templateUrl: 'app.html'
@@ -17,7 +22,9 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
   rootPage:any = HomePage;
   pages : IPage[] = [
-    {title:'Grupos', component:HomePage}, {title:'Termos de Uso', component:TermosPage}, {title:'Lista', component:ListPage}
+    {title:'Inicio', component:HomePage, icon:"home"},{title:'Grupos', component:GruposPage, icon:"people"}, 
+    {title:'Configurações', component:ConfiguracoesPage, icon:"settings"}, {title:'Termos de Uso', component:TermosPage, icon:"book"}, 
+    {title:'Lista', component:ListPage, icon:"body"}, {title:"Ajuda", component:HelpPage, icon:"help-circle"}, {title:"Sair", component:ExitPage, icon:"exit"}
   ]
 
   

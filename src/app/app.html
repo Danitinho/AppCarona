@@ -3,12 +3,17 @@
     </ion-navbar>
     <ion-content>
         <div class="topSideDrawer">
-            LBSSDSD
+            <div class="inDrawer" >
+                <img src="https://pbs.twimg.com/profile_images/951657652479807490/90JTdz9d_400x400.jpg">               
+                <p>João Victor Rocha</p>
+            </div>
         </div>
 
-        <ion-list no-lines>
+        <ion-list no-lines class="formatText">
             <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-                {{p.title}}</button>
+                <ion-icon [name]="p.icon" style="padding: 10px"></ion-icon>
+                {{p.title}}
+            </button>
         </ion-list>
     </ion-content>
 </ion-menu>
