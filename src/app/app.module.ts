@@ -13,6 +13,9 @@ import { Contact, Contacts } from '@ionic-native/contacts';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { StatusPage } from '../pages/status/status';
 
+import { Geolocation } from '@ionic-native/geolocation';
+import { GeoLocationPage } from '../pages/geo-location/geo-location';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -21,7 +24,8 @@ import { StatusPage } from '../pages/status/status';
     TermosPage,
     ContactsPage,
     CadastroPage,
-    StatusPage
+    StatusPage,
+    GeoLocationPage
   ],
   imports: [
     BrowserModule,
@@ -35,13 +39,15 @@ import { StatusPage } from '../pages/status/status';
     TermosPage,
     ContactsPage,
     CadastroPage,
-    StatusPage
+    StatusPage,
+    GeoLocationPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Contacts,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Geolocation
   ]
 })
 export class AppModule {}

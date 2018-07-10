@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-searchbar
+      [(ngModel)]="start"
+      [showCancelButton]="shouldShowCancel"
+      (ionInput)="onInput($event)"
+      (ionCancel)="onCancel($event)" 
+      placeholder="Escolher ponto de partida" clearInput 
+      id="start" (keypress)="calculateAndDisplayRoute()">
+    </ion-searchbar>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    
+    <ion-searchbar
+      [(ngModel)]="end"
+      [showCancelButton]="shouldShowCancel"
+      (ionInput)="onInput($event)"
+      (ionCancel)="onCancel($event)" 
+      placeholder="Escolher destino" clearInput 
+      id="end" (keypress)="calculateAndDisplayRoute()">
+    </ion-searchbar> 
+
+    <button ion-button clear color="dark" item-right type="button">
+        <ion-label style="text-align: center"> <ion-icon name="locate"></ion-icon><p> <small>Local Atual</small> </p> </ion-label>
+    </button>
+
+    <div #map id="map" data-tap-disable="true"></div>
+
+</ion-content>
