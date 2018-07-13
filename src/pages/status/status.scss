@@ -1,21 +1,33 @@
 .img-status {
-    width: 96px;
-    height: 96px;
+    width: 78px;
+    height: 78px;
     border-radius: 50%;
-}
-.pickStatus {
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
-    color: $primary;
-}
-.pickStatus1 {
-    font-size: 24px;
-    color: $primary;
+    border: 1px solid black;
 }
 .container {
+    width: 100vw;
+    height: 100vh;
+}
+.box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $primary;
     
-    justify-content: flex-end;
-    text-align: center;
+}
+.item {
+	flex: 1;
+    font-size: 1.5em;
+}
+.presentation-text {
+    flex: 1;
+    color: $primary;
+    font-size: 1.5em;
+    flex-direction: column;
+}
+.footer {
     color: $secondary;
 }

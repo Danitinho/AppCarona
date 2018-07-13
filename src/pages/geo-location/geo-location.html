@@ -14,18 +14,20 @@
 
 <ion-content>
     
-    <ion-searchbar
-      [(ngModel)]="end"
-      [showCancelButton]="shouldShowCancel"
-      (ionInput)="onInput($event)"
-      (ionCancel)="onCancel($event)" 
-      placeholder="Escolher destino" clearInput 
-      id="end" (keypress)="calculateAndDisplayRoute()">
-    </ion-searchbar> 
-
-    <button ion-button clear color="dark" item-right type="button">
-        <ion-label style="text-align: center"> <ion-icon name="locate"></ion-icon><p> <small>Local Atual</small> </p> </ion-label>
-    </button>
+    <div class="searchContainer">
+      <ion-searchbar
+        [(ngModel)]="end"
+        [showCancelButton]="shouldShowCancel"
+        (ionInput)="onInput($event)"
+        (ionCancel)="onCancel($event)" 
+        placeholder="Escolher destino" clearInput 
+        id="end" (keypress)="calculateAndDisplayRoute()">
+      </ion-searchbar> 
+      <input type="submit" value="Search" class="locateButton">
+      <button class="locateButton" clear color="dark"  type="">
+          <ion-icon name="locate"></ion-icon>
+      </button>
+    </div>
 
     <div #map id="map" data-tap-disable="true"></div>
 

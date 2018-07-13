@@ -18,6 +18,28 @@ page-geo-location {
     .map-input {
         background-color: white;
     }
-    
-        
+    .searchContainer {
+        display: inline-flex;
+        flex: 1 1 300px;
+        position: relative;
+        overflow: hidden;
+    }
+    .searchIcon {
+        padding: 0.5rem;
+      }
+      
+      .searchBox {
+        border: 0;
+        padding: 0.5rem 0.5rem 0.5rem 0;
+        flex: 1;
+      }
+    .locateButton {
+        border: 0;
+        color: black;
+        padding: 0.5rem;
+        border-radius: 0;
+    }
+    .icon-size {
+        size: 33px;
+    }
 }
