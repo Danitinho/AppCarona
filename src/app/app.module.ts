@@ -15,6 +15,7 @@ import { StatusPage } from '../pages/status/status';
 
 import { Geolocation } from '@ionic-native/geolocation';
 import { GeoLocationPage } from '../pages/geo-location/geo-location';
+import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { GeoLocationPage } from '../pages/geo-location/geo-location';
     ContactsPage,
     CadastroPage,
     StatusPage,
-    GeoLocationPage
+    GeoLocationPage,
+    ConfiguracoesPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import { GeoLocationPage } from '../pages/geo-location/geo-location';
     ContactsPage,
     CadastroPage,
     StatusPage,
-    GeoLocationPage
+    GeoLocationPage,
+    ConfiguracoesPage
   ],
   providers: [
     StatusBar,

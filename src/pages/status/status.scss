@@ -5,16 +5,18 @@
     border: 1px solid black;
 }
 .container {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    
 }
 .box {
-    height: 50vh;
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     color: $primary;
+    margin-bottom: 50px;
     
 }
 .item {
@@ -22,11 +24,15 @@
     font-size: 1.5em;
 }
 .presentation-text {
+    display: flex;
     flex: 1;
     color: $primary;
     font-size: 1.5em;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 .footer {
+    display: flex;
     color: $secondary;
+    flex-direction: column;
 }

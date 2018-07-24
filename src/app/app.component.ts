@@ -26,7 +26,7 @@ export class MyApp {
     {title:'Inicio', component:HomePage, icon:"home"},{title:'Grupos', component:GruposPage, icon:"people"}, 
     {title:'Configurações', component:ConfiguracoesPage, icon:"settings"}, {title:'Termos de Uso', component:TermosPage, icon:"book"}, 
     {title:'Lista', component:ListPage, icon:"body"}, {title:"Ajuda", component:HelpPage, icon:"help-circle"}, {title:"Sair", component:ExitPage, icon:"exit"},
-    {title:"Contatos", component:ContactsPage, icon:"people"}
+    {title:"Contatos", component:ContactsPage, icon:"contact"}
   ]
 
   
